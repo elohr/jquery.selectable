@@ -1,0 +1,270 @@
+.plugin-fade {
+    display: block !important;
+    opacity: 1 !important;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+.selectable .selectable-option {
+    display: none;
+}
+.selectable-placeholder {
+    list-style: none;
+    display: inline-block;
+    padding: 7px 0px 0px 5px;
+    color: #555555;
+    cursor: default;
+}
+.selectable ul {
+    display: block;
+    width: 100%;
+    padding: 2px 68px 2px 2px;
+    margin: 12px auto 0px auto;
+    position: relative;
+    line-height: 16px;
+    border-radius: 3px;
+    color: #444444;
+    font-size: 0.9em;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    min-height: 35px;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow:    inset 0px 1px 3px 0px rgba(0, 0, 0, 0.65);
+    box-shadow:         inset 0px 1px 3px 0px rgba(0, 0, 0, 0.65);
+}
+form .selectable ul {
+    width: 80%;
+    margin: 0px auto 8px auto;
+}
+.selectable li.selectable-li {
+    list-style: none;
+    display: inline-block;
+    padding: 3px 4px;
+    border-radius: 3px;
+    margin: 3px 0px 0px 4px;
+    background-color: #EFEFEF;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.selectable li.selectable-li:hover {
+    background-color: #DDDDDD;
+}
+li.selectable-button-container {
+    position: absolute;
+    right: 0px;
+    top: 3px;
+    margin: 2px 5px;
+    list-style: none;
+}
+li.selectable-button-container button {
+    margin: 0px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #BBBBBB;
+    color: #444444;
+    padding: 2px 8px;
+    background: #F4F4F4;
+    max-width: 57px;
+    min-width: 57px;
+}
+li.selectable-button-container button:active,
+li.selectable-button-container button:focus,
+li.selectable-button-container button:hover {
+    background: #FAFAFA;
+}
+.selectable-popup {
+    position: absolute;
+    z-index: 951;
+    padding: 0px;
+    min-height: 150px;
+    min-width: 150px;
+    display: none;
+    opacity: 0;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+    margin: 0px auto;
+
+    border-top: 1px solid #444444;
+    border-left: 1px solid #444444;
+    border-right: 3px solid #444444;
+    border-bottom: 3px solid #444444;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.selectable-close-icon {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.selectable-overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(77, 81, 86, 0.7);
+    display: none;
+    z-index: 950;
+}
+.selectable-popup form {
+    width: 600px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #AAAAAA;
+    padding: 1px;
+    overflow: hidden;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.selectable-popup label {
+    display: inline;
+    padding: 0px;
+    margin: 8px 0px 8px 8px;
+    font-weight: 300;
+    width: auto;
+}
+.selectable-popup form input[type="text"] {
+    display: inline;
+    width: 210px;
+    padding: 2px 6px;
+    margin: 8px;
+    line-height: 16px;
+    border-radius: 3px;
+    color: #444444;
+    font-size: 0.9em;
+    height: 30px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+
+    -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow:    inset 0px 1px 3px 0px rgba(0, 0, 0, 0.65);
+    box-shadow:         inset 0px 1px 3px 0px rgba(0, 0, 0, 0.65);
+}
+.selectable-results-container {
+    height: 250px;
+    max-width: 584px;
+    padding: 8px;
+    margin-bottom: 45px;
+    overflow: auto;
+}
+.selectable-popup-title-container {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 70%;
+    top: -48px;
+}
+.selectable-popup-title {
+    position: relative;
+    left: -50%;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 6px 0px;
+    text-align: center;
+    font-size: 1.2em;
+    border-top: 1px solid #444444;
+    border-left: 1px solid #444444;
+    border-right: 3px solid #444444;
+    border-bottom: 3px solid #444444;
+}
+.selectable-result-item {
+    padding: 2px 8px;
+    display: inline-block;
+    margin: 6px 4px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #DEDEDE;
+}
+.selectable-result-item:hover {
+    background-color: #CDCDCD;
+}
+.selectable-selected {
+    background-color: #37B1D6;
+    color: #FFFFFF;
+}
+.selectable-selected:hover {
+    background-color: #4BBAD8;
+}
+.button-selectable {
+    display: block;
+    cursor: default;
+    border-radius: 3px;
+    border: 0px;
+}
+.button-selectable:active {
+    border: 1px solid #FFFFFF;
+    -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+}
+.normal-button-selectable {
+    border: 1px solid #DCDCDC;
+    border-bottom: 3px solid #BBBBBB;
+    color: #444444;
+    padding: 3px 12px;
+    background: #FFFFFF;
+}
+.normal-button-selectable:active {
+    padding-top: 5px;
+    padding-bottom: 3px;
+    background-color: #FAFAFA;
+}
+.highlight-button-selectable {
+    margin: 24px auto 12px auto;
+    padding: 5px 32px 3px 32px;
+    border: 1px solid #FFFFFF;
+    border-bottom: 3px solid #30963C;
+    color: #FFFFFF;
+    background: #4DBC5A;
+}
+.highlight-button-selectable:active {
+    padding: 7px 32px 3px 32px !important;
+    background-color: #47AD53;
+}
+
+@media only screen and (max-width: 650px) {
+    .selectable-popup {
+        width: 100% !important;
+        left: 0px !important;
+        border-radius: 0px !important;
+        border-left: 0px solid #FFFFFF !important;
+        border-right: 0px solid #FFFFFF !important;
+    }
+    .selectable-popup form {
+        width: 100% !important;
+        padding: 0px !important;
+    }
+    .selectable-popup-title-container {
+        left: 0px;
+        width: 100%;
+    }
+    .selectable-popup-title {
+        left: 0px;
+        border-left: 0px solid #FFFFFF !important;
+        border-right: 0px solid #FFFFFF !important;
+
+    }
+}
