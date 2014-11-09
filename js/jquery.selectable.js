@@ -175,6 +175,12 @@ function Selectable(element, options) {
                 top: $(element).offset().top + 24
             }).addClass('plugin-fade');
 
+            if(s.popup.offset().top + s.popup.outerHeight(true) > $(window).height()) {
+                s.popup.css({
+                    top: $(element).offset().top + 24 - s.popup.outerHeight(true)
+                });
+            }
+
             // Trigger Opened Event
             options.opened(element);
 
